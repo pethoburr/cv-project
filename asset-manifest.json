@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cv-project/static/css/main.ce40c3c8.css",
+    "main.js": "/cv-project/static/js/main.bc75dc09.js",
+    "static/js/787.34a20539.chunk.js": "/cv-project/static/js/787.34a20539.chunk.js",
+    "static/media/Hanalei-Regular.ttf": "/cv-project/static/media/Hanalei-Regular.31f2ea6f650f0252b77f.ttf",
+    "static/media/Righteous-Regular.ttf": "/cv-project/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "index.html": "/cv-project/index.html",
+    "main.ce40c3c8.css.map": "/cv-project/static/css/main.ce40c3c8.css.map",
+    "main.bc75dc09.js.map": "/cv-project/static/js/main.bc75dc09.js.map",
+    "787.34a20539.chunk.js.map": "/cv-project/static/js/787.34a20539.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce40c3c8.css",
+    "static/js/main.bc75dc09.js"
+  ]
+}
