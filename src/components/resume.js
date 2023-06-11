@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Resume = (props) => {
     const { array } = props;
     
-    console.log(array[3]);
+    console.log(props);
     if(array.length > 0) {
         return (
             <div className='resumeContainer'>
@@ -14,8 +14,9 @@ const Resume = (props) => {
                     <h1 className='resumeHeader'>{array[0].name}&nbsp;{array[0].surName}</h1>
                     
                 </header>
+                <div className='flexContainer'>
                 <div className='infoContainer'>
-                        <h1>Contact</h1>
+                        <h1 className='contactTitle'>Contact</h1>
                         <div className='resEmail'><FontAwesomeIcon icon={faEnvelopeCircleCheck} /><div className='emailEl'>{array[0].email}</div></div>
                         <div className='resNum'><FontAwesomeIcon icon={faPhoneVolume} /><div className='numEl'>{array[0].num}</div></div>
                     </div>
@@ -51,6 +52,7 @@ const Resume = (props) => {
                     })}
                     </div>
 
+                </div>
                 </div>
             </div>
         )

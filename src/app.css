@@ -44,6 +44,7 @@ footer {
 }
 
 .content {
+    position: relative;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -307,26 +308,39 @@ button {
 }
 
 .resumeContainer {
-    width: 60vw;
-    min-height: 70vh;
+    min-width: 600px;
+    width: 70vw;
+    height: 70vh;
     margin-top: 2rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(132, 105, 105, 0.23) 0px 6px 6px;
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: auto;
+}
+
+.flexContainer {
+    display: flex;
+    width: 70vw;
 }
 
 .headerContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     grid-column: 1 / -1;
     height: auto;
 }
 
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    white-space: initial;
+}
+
 .infoContainer {
     background-color: royalblue;
-    grid-row: 2 / -1;
-    grid-column: 1 / 2;
+    flex-shrink: 1;
+  
     display: flex;
     flex-direction: column;
     color: white;
@@ -334,11 +348,12 @@ button {
 }
 
 .bodyContainer {
+    flex-grow: 2;
     display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
     flex-direction: column;
     padding-left: 2rem;
-    grid-row: 2/ -1;
-    grid-column: 2 / -1;
 }
 
 .resumeHeader {
@@ -353,6 +368,7 @@ button {
 
 .emailEl {
     padding-left: 2px;
+    font-size: smaller;
 }
 
 .resNum {
@@ -371,3 +387,53 @@ h4 {
     color: white;
 }
 
+@media (max-width: 768px) {
+    .content {
+        grid-template-rows: .3fr 4fr .3fr;
+    }
+
+
+    form {
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: column;
+    }
+
+    .general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    input {
+        width: 8rem;
+    };
+
+    .contactTitle { 
+        font-size: 1rem;
+    }
+
+    .resNum, .emailEl {
+        font-size: .8rem;
+    }
+
+    
+
+
+
+}
